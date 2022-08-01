@@ -21,9 +21,7 @@
 }
 
 body {
-    /* width: 100vw;
-    min-height: 100vh;
-    max-width: 100%; */
+    background-color: var(--ne-verylightgray);
 }
 
 /* typography */
@@ -32,8 +30,12 @@ body {
     font-size: 15px;
 }
 
-h1 {
-    font-size: 28px;
+h2 {
+    font-size: 20px;
+}
+
+.card>p {
+    font-size: 13px;
 }
 
 .fw-200 {
@@ -58,6 +60,10 @@ h1 {
 
 .ne3 {
     color: var(--ne-verylightgray);
+}
+
+.py-1 {
+    padding-bottom: 0.5rem;
 }
 
 /* container */
@@ -171,7 +177,7 @@ header>p {
     }
 
     header {
-        max-width: 22rem;
+        max-width: 24rem;
     }
 
     .content {
@@ -185,4 +191,18 @@ header>p {
     }
 }
 
+@media (max-width:360px) {
+    h1 {
+        font-size: 28px;
+    }
+}
 
+@media (max-width:280px) {
+    body {
+        width: 100vw;
+    }
+
+    .card {
+        transform: scale(0.8);
+    }
+}
